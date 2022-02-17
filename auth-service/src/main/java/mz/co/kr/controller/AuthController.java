@@ -1,6 +1,6 @@
 package mz.co.kr.controller;
 
-import mz.co.kr.domain.dto.UserDto;
+import mz.co.kr.auth.domain.dto.UserDto;
 import mz.co.kr.payload.ApiResponse;
 import mz.co.kr.payload.AuthResponse;
 import mz.co.kr.payload.SignInRequest;

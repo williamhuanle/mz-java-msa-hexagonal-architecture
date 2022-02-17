@@ -1,8 +1,8 @@
 package mz.co.kr.services;
 
-import mz.co.kr.domain.dto.UserDto;
-import mz.co.kr.domain.enums.OAuth2Provider;
-import mz.co.kr.ports.api.UserServicePort;
+import mz.co.kr.auth.domain.dto.UserDto;
+import mz.co.kr.auth.domain.enums.OAuth2Provider;
+import mz.co.kr.auth.ports.api.UserServicePort;
 import mz.co.kr.security.model.UserPrincipal;
 import mz.co.kr.security.oauth2.exception.OAuth2AuthenticationProcessingException;
 import mz.co.kr.security.oauth2.user.OAuth2UserInfo;

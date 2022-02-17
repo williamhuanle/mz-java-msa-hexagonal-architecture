@@ -1,9 +1,9 @@
-package mz.co.kr.domain.dto;
+package mz.co.kr.auth.domain.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import mz.co.kr.domain.enums.OAuth2Provider;
+import mz.co.kr.auth.domain.enums.OAuth2Provider;
 
 @Data
 @NoArgsConstructor

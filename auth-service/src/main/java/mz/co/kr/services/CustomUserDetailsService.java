@@ -1,8 +1,8 @@
 package mz.co.kr.services;
 
-import mz.co.kr.domain.dto.UserDto;
+import mz.co.kr.auth.domain.dto.UserDto;
 import mz.co.kr.exception.ResourceNotFoundException;
-import mz.co.kr.ports.api.UserServicePort;
+import mz.co.kr.auth.ports.api.UserServicePort;
 import mz.co.kr.security.model.UserPrincipal;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;

@@ -1,7 +1,7 @@
 package mz.co.kr.entity;
 
 import lombok.Data;
-import mz.co.kr.domain.enums.OAuth2Provider;
+import mz.co.kr.auth.domain.enums.OAuth2Provider;
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;

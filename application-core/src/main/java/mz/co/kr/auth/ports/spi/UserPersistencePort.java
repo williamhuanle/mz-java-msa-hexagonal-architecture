@@ -1,6 +1,6 @@
-package mz.co.kr.ports.spi;
+package mz.co.kr.auth.ports.spi;
 
-import mz.co.kr.domain.dto.UserDto;
+import mz.co.kr.auth.domain.dto.UserDto;
 
 import java.util.Optional;
 

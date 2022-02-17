@@ -1,6 +1,6 @@
 package mz.co.kr.controller;
 
-import mz.co.kr.domain.dto.EmployeeDto;
+import mz.co.kr.admin.domain.dto.EmployeeDto;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;

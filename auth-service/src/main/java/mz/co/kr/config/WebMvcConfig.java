@@ -1,9 +1,9 @@
 package mz.co.kr.config;
 
 import mz.co.kr.adapters.UserJpaAdapterImpl;
-import mz.co.kr.domain.services.UserServiceImpl;
-import mz.co.kr.ports.api.UserServicePort;
-import mz.co.kr.ports.spi.UserPersistencePort;
+import mz.co.kr.auth.domain.services.UserServiceImpl;
+import mz.co.kr.auth.ports.api.UserServicePort;
+import mz.co.kr.auth.ports.spi.UserPersistencePort;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

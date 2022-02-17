@@ -1,8 +1,8 @@
 package mz.co.kr.adapters;
 
-import mz.co.kr.domain.dto.UserDto;
+import mz.co.kr.auth.domain.dto.UserDto;
 import mz.co.kr.entity.User;
-import mz.co.kr.ports.spi.UserPersistencePort;
+import mz.co.kr.auth.ports.spi.UserPersistencePort;
 import mz.co.kr.repository.UserRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;

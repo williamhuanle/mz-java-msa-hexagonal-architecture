@@ -1,6 +1,6 @@
 package mz.co.kr.security.oauth2.user;
 
-import mz.co.kr.domain.enums.OAuth2Provider;
+import mz.co.kr.auth.domain.enums.OAuth2Provider;
 import mz.co.kr.security.oauth2.exception.OAuth2AuthenticationProcessingException;
 
 import java.util.Map;

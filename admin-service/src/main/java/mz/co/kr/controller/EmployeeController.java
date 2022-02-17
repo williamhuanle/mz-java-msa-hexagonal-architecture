@@ -1,7 +1,7 @@
 package mz.co.kr.controller;
 
-import mz.co.kr.domain.dto.EmployeeDto;
-import mz.co.kr.ports.api.EmployeeServicePort;
+import mz.co.kr.admin.domain.dto.EmployeeDto;
+import mz.co.kr.admin.ports.api.EmployeeServicePort;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

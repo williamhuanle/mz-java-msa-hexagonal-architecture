@@ -1,4 +1,4 @@
-package mz.co.kr.domain.enums;
+package mz.co.kr.auth.domain.enums;
 
 public enum OAuth2Provider {
     local,

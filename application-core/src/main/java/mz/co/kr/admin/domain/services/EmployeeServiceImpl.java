@@ -1,8 +1,8 @@
-package mz.co.kr.domain.services;
+package mz.co.kr.admin.domain.services;
 
-import mz.co.kr.domain.dto.EmployeeDto;
-import mz.co.kr.ports.api.EmployeeServicePort;
-import mz.co.kr.ports.spi.EmployeePersistencePort;
+import mz.co.kr.admin.domain.dto.EmployeeDto;
+import mz.co.kr.admin.ports.api.EmployeeServicePort;
+import mz.co.kr.admin.ports.spi.EmployeePersistencePort;
 
 import java.util.List;
 

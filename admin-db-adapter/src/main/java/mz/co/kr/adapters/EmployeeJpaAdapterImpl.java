@@ -1,8 +1,8 @@
 package mz.co.kr.adapters;
 
-import mz.co.kr.domain.dto.EmployeeDto;
+import mz.co.kr.admin.domain.dto.EmployeeDto;
 import mz.co.kr.entity.Employee;
-import mz.co.kr.ports.spi.EmployeePersistencePort;
+import mz.co.kr.admin.ports.spi.EmployeePersistencePort;
 import mz.co.kr.repository.EmployeeRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,9 +1,9 @@
 package mz.co.kr.config;
 
 import mz.co.kr.adapters.EmployeeJpaAdapterImpl;
-import mz.co.kr.domain.services.EmployeeServiceImpl;
-import mz.co.kr.ports.api.EmployeeServicePort;
-import mz.co.kr.ports.spi.EmployeePersistencePort;
+import mz.co.kr.admin.domain.services.EmployeeServiceImpl;
+import mz.co.kr.admin.ports.api.EmployeeServicePort;
+import mz.co.kr.admin.ports.spi.EmployeePersistencePort;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

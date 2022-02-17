@@ -1,10 +1,10 @@
 package mz.co.kr.services;
 
-import mz.co.kr.domain.dto.UserDto;
-import mz.co.kr.domain.enums.OAuth2Provider;
+import mz.co.kr.auth.domain.dto.UserDto;
+import mz.co.kr.auth.domain.enums.OAuth2Provider;
 import mz.co.kr.exception.BadRequestException;
 import mz.co.kr.payload.SignUpRequest;
-import mz.co.kr.ports.api.UserServicePort;
+import mz.co.kr.auth.ports.api.UserServicePort;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

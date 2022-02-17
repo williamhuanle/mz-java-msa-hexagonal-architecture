@@ -1,6 +1,6 @@
-package mz.co.kr.ports.api;
+package mz.co.kr.admin.ports.api;
 
-import mz.co.kr.domain.dto.EmployeeDto;
+import mz.co.kr.admin.domain.dto.EmployeeDto;
 
 import java.util.List;
 

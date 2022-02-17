@@ -1,4 +1,4 @@
-package mz.co.kr.domain.dto;
+package mz.co.kr.admin.domain.dto;
 
 import lombok.*;
 

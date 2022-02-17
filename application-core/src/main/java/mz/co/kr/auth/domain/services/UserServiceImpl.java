@@ -1,8 +1,8 @@
-package mz.co.kr.domain.services;
+package mz.co.kr.auth.domain.services;
 
-import mz.co.kr.domain.dto.UserDto;
-import mz.co.kr.ports.api.UserServicePort;
-import mz.co.kr.ports.spi.UserPersistencePort;
+import mz.co.kr.auth.domain.dto.UserDto;
+import mz.co.kr.auth.ports.api.UserServicePort;
+import mz.co.kr.auth.ports.spi.UserPersistencePort;
 
 import java.util.Optional;
 

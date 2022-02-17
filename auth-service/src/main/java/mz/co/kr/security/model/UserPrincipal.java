@@ -1,6 +1,6 @@
 package mz.co.kr.security.model;
 
-import mz.co.kr.domain.dto.UserDto;
+import mz.co.kr.auth.domain.dto.UserDto;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
