@@ -1,0 +1,1 @@
+# mz-java-msa-hexagonal-architecture
