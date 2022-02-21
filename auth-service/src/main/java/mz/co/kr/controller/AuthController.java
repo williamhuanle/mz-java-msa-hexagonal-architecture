@@ -54,11 +54,6 @@ public class AuthController {
     public ApiResponse registerUser(@Valid @RequestBody SignUpRequest signUpRequest) {
 
         UserDto userDto = authService.createUser(signUpRequest);
-
-        URI location = ServletUriComponentsBuilder
-                .fromCurrentContextPath().path("/user/me")
-                .buildAndExpand(userDto.getId()).toUri();
-
         return new ApiResponse(true, "User registered successfully!");
     }
 
