@@ -17,8 +17,11 @@ dependencies {
 
     implementation project(':application-core')
     implementation project(':admin-db-adapter')
-
     implementation 'org.springframework.boot:spring-boot-starter-web:2.6.3'
+    implementation 'org.modelmapper:modelmapper:2.1.1'
+
+    compileOnly 'org.projectlombok:lombok:1.18.22'
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
 }
 
 test {
