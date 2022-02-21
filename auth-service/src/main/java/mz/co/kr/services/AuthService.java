@@ -3,7 +3,7 @@ package mz.co.kr.services;
 import mz.co.kr.auth.domain.dto.UserDto;
 import mz.co.kr.auth.domain.enums.OAuth2Provider;
 import mz.co.kr.exception.BadRequestException;
-import mz.co.kr.payload.SignUpRequest;
+import mz.co.kr.controller.payload.request.SignUpRequest;
 import mz.co.kr.auth.ports.api.UserServicePort;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;

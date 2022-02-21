@@ -1,4 +1,4 @@
-package mz.co.kr.payload;
+package mz.co.kr.controller.payload.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

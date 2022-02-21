@@ -1,10 +1,10 @@
 package mz.co.kr.controller;
 
 import mz.co.kr.auth.domain.dto.UserDto;
-import mz.co.kr.payload.ApiResponse;
-import mz.co.kr.payload.AuthResponse;
-import mz.co.kr.payload.SignInRequest;
-import mz.co.kr.payload.SignUpRequest;
+import mz.co.kr.controller.payload.response.ApiResponse;
+import mz.co.kr.controller.payload.response.AuthResponse;
+import mz.co.kr.controller.payload.request.SignInRequest;
+import mz.co.kr.controller.payload.request.SignUpRequest;
 import mz.co.kr.security.jwt.TokenProvider;
 import mz.co.kr.services.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;

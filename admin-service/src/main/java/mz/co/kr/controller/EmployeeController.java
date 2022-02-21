@@ -22,7 +22,7 @@ public class EmployeeController {
     }
 
     @GetMapping()
-    public List<EmployeeDto> getAllBooks() {
+    public List<EmployeeDto> getAll() {
         return employeeServicePort.fetchAll();
     }
 
