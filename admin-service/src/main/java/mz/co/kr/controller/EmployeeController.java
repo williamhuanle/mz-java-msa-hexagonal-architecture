@@ -17,7 +17,7 @@ public class EmployeeController {
 
     @PostMapping()
     @ResponseStatus(HttpStatus.CREATED)
-    public EmployeeDto addBook(@RequestBody EmployeeDto employeeDto) {
+    public EmployeeDto add(@RequestBody EmployeeDto employeeDto) {
         return employeeServicePort.add(employeeDto);
     }
 
