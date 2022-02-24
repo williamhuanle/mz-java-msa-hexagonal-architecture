@@ -36,3 +36,6 @@ hs_err_pid*
 /auth-service/src/main/resources/application-local.yml
 /admin-db-mongo-adapter/build/tmp/compileJava/previous-compilation-data.bin
 /admin-db-mongo-adapter/build/tmp/jar/MANIFEST.MF
+/admin-service/src/main/resources/application-dev.yml
+/auth-service/src/main/resources/application-dev.yml
+/admin-db-mongo-adapter/src/main/resources/application-dev.yml
