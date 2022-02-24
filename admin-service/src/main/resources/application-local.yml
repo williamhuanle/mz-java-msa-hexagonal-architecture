@@ -1,9 +1,13 @@
 spring:
+  #mongo db connection
+  data:
+    mongodb:
+      uri: mongodb+srv://root:mzMongo123%40@cluster0.d6uzg.mongodb.net/admin-mongodb?retryWrites=true&w=majority
   #database config
   datasource:
-    url: jdbc:mysql://localhost:3306/mz_db_user?useSSL=false
+    url: jdbc:mysql://localhost:3306/mz_db_admin?useSSL=false
     username: root
-    password: #your password
+    password: mzMysql123@
   #spring jpa config
   jpa:
     show-sql: true
@@ -13,21 +17,10 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-  #spring security config
-  security:
-    oauth2:
-      client:
-        registration:
-          google:
-            clientId: #your clientId
-            clientSecret: #your clientSecret
-            redirectUri: "{baseUrl}/oauth2/callback/{registrationId}"
-            scope:
-              - email
-              - profile
+
 mz-app:
   jwtAuth:
-    tokenSecret: #your secret key
+    tokenSecret: 5R0ztqkws.I7njY-2&hHz+1s8Ih==y<GY!3a5RYn+Dz'<upv$MYevaux5uJsi!4
     tokenExpirationMsec: 864000000
   oauth2:
     # After successfully authenticating with the OAuth2 Provider,
@@ -35,8 +28,8 @@ mz-app:
     # redirectUri mentioned by the client in the /oauth2/authorize request.
     # We're not using cookies because they won't work well in mobile clients.
     authorizedRedirectUris:
-      - http://localhost:8082/auth/oauth2/redirect
+      - http://localhost:3000/oauth2/redirect
       - myandroidapp://oauth2/redirect
       - myiosapp://oauth2/redirect
   cors:
-    allowedOrigins: http://localhost:8082,http://localhost:8080
+    allowedOrigins: http://localhost:3000,http://localhost:8080

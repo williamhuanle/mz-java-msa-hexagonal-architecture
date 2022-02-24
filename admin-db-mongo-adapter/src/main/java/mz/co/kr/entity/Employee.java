@@ -1,18 +1,19 @@
-package mz.co.kr.admin.domain.dto;
+package mz.co.kr.entity;
 
-import lombok.*;
-
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.Id;
 import java.time.LocalDateTime;
 
-@Getter
-@Setter
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class EmployeeDto {
+public class Employee {
 
+    @Id
     private String mongoId;
-    private Long employeeId;
+
     private String firstName;
     private String lastName;
     private String title;

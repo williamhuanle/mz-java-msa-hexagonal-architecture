@@ -33,3 +33,6 @@ hs_err_pid*
 /application-core/build/
 /auth-service/build/
 /user-db-adapter/build/
+/auth-service/src/main/resources/application-local.yml
+/admin-db-mongo-adapter/build/tmp/compileJava/previous-compilation-data.bin
+/admin-db-mongo-adapter/build/tmp/jar/MANIFEST.MF

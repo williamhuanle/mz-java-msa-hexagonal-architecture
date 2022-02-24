@@ -4,4 +4,5 @@ include 'user-db-adapter'
 include 'auth-service'
 include 'admin-db-adapter'
 include 'admin-service'
+include 'admin-db-mongo-adapter'
 

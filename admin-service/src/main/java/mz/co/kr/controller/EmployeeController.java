@@ -25,10 +25,4 @@ public class EmployeeController {
     public List<EmployeeDto> getAll() {
         return employeeServicePort.fetchAll();
     }
-
-    @DeleteMapping("/{employeeId}")
-    @ResponseStatus(HttpStatus.OK)
-    public void delete(@PathVariable long employeeId) {
-        employeeServicePort.deleteByEmployeeId(employeeId);
-    }
 }

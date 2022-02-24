@@ -1,0 +1,4 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://root:mzMongo123%40@cluster0.d6uzg.mongodb.net/admin-mongodb-test?retryWrites=true&w=majority
