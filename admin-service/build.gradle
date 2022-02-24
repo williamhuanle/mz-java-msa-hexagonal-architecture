@@ -16,7 +16,8 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 
     implementation project(':application-core')
-    implementation project(':admin-db-mongo-adapter')
+    implementation project(':admin-db-adapter')
+//    implementation project(':admin-db-mongo-adapter')
     implementation 'org.springframework.boot:spring-boot-starter-web:2.6.3'
     implementation 'org.modelmapper:modelmapper:2.1.1'
 
