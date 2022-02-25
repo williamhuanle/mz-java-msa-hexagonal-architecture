@@ -15,6 +15,6 @@ public class GreetingController {
 
 	@GetMapping("/greeting")
 	public EmployeeDto greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
-		return new EmployeeDto(counter.incrementAndGet(), String.format(template, name), null, null, null, null, null);
+		return new EmployeeDto(null, counter.incrementAndGet(), String.format(template, name), null, null, null, null, null);
 	}
 }
