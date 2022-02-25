@@ -39,3 +39,4 @@ hs_err_pid*
 /admin-service/src/main/resources/application-dev.yml
 /auth-service/src/main/resources/application-dev.yml
 /admin-db-mongo-adapter/src/main/resources/application-dev.yml
+/admin-db-mongo-adapter/build/resources/main/application-dev.yml
