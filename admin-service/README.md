@@ -1,4 +1,12 @@
 #Spring Boot, MySQL, Docker
+
+Let install docker to run admin-service
+
+If you are ready let run this command to deploy admin-service on your host
+```
+docker run --name admin-service-mgdb-cloud-container -p 8085:8081 williamhuanle/admin-service-mgdb-cloud:0.0.1-SNAPSHOT
+```
+
 - --
 This guide will let you how to use build and run the application using Dockerfile
 
@@ -88,4 +96,10 @@ ref: https://www.freecodecamp.org/news/how-to-get-a-docker-container-ip-address-
 - Push the image to docker hub
 ```
 % docker push williamhuanle/admin-service:0.0.1-SNAPSHOT 
+```
+
+- Pulling the image from docker hub and running it
+
+```
+docker run --network backend-network --name admin-service-container -p 8085:8081 williamhuanle/admin-service:0.0.1-SNAPSHOT
 ```

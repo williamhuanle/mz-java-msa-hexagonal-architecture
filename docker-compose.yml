@@ -1,0 +1,27 @@
+# Docker Compose file Reference https://docs.docker.com/compose/compose-file/compose-file-v3/#compose-file-structure-and-examples
+version: "3.9"
+services:
+  mongodb:
+    image: mongo
+    restart: always
+    container_name: mongodb-container
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: mzMongo123@
+    networks:
+      - backend-network
+
+  admin-service:
+    build:
+      context: admin-service
+      dockerfile: Dockerfile
+    container_name: admin-service-mgdb-local-container
+    ports:
+      - "8086:8081"
+    networks:
+      - backend-network
+    depends_on:
+      - mongodb
+
+networks:
+  backend-network:
