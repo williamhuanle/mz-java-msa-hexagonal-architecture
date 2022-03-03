@@ -42,3 +42,4 @@ hs_err_pid*
 /admin-db-mongo-adapter/build/resources/main/application-dev.yml
 /admin-db-adapter/src/main/resources/application-dev.yml
 /dev-ops/build/
+/dev-ops/config/.env.dev

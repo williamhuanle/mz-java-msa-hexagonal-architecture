@@ -39,7 +39,7 @@ Access to container and login to mysql with user root
 ```
 _it should build source code before build docker image_
 ```
-% docker build -t admin-service .
+% docker build -t auth-service .
 % docker image ls
 % docker run --network backend-network --name auth-service-container -p 8080:8080 -d auth-service
 % docker container ls

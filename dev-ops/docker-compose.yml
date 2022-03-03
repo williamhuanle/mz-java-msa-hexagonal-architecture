@@ -1,0 +1,63 @@
+# Docker Compose file Reference https://docs.docker.com/compose/compose-file/compose-file-v3/#compose-file-structure-and-examples
+version: "3.9"
+services:
+  mongodb:
+    image: mongo
+    restart: always
+    container_name: mongo-container
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+      MONGO_INITDB_DATABASE: ${MONGO_INITDB_DATABASE}
+    networks:
+      - backend-network
+
+  admin-service:
+#    build:
+#      context: admin-service
+#      dockerfile: Dockerfile
+    image: williamhuanle/admin-service:0.0.1-SNAPSHOT
+    restart: always
+    container_name: admin-service-container
+    ports:
+      - "8081:8081"
+    networks:
+      - backend-network
+    depends_on:
+      - mongodb
+
+  mysqldb:
+    image: mysql
+    restart: always
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+    networks:
+      - backend-network
+
+  auth-service:
+    image: williamhuanle/auth-service:0.0.1-SNAPSHOT
+    restart: always
+    container_name: auth-service-container
+    ports:
+      - "8080:8080"
+    networks:
+      - backend-network
+    depends_on:
+      - mysqldb
+
+  web-admin:
+    image: williamhuanle/web-admin:0.0.1-SNAPSHOT
+    restart: always
+    container_name: web-admin-container
+    ports:
+      - "8082:8082"
+    networks:
+      - backend-network
+    depends_on:
+      - auth-service
+      - admin-service
+
+networks:
+  backend-network:
