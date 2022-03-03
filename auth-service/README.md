@@ -1,11 +1,6 @@
-#Spring Boot, MongoDB, Docker
-
-Let install docker to run admin-service
-
-If you are ready let run this command to deploy admin-service on your host
-```
-docker run --name admin-service-mgdb-cloud-container -p 8085:8081 williamhuanle/admin-service-mgdb-cloud:0.0.1-SNAPSHOT
-```
+#Auth Service
+Which include the functions sign-up, sign-in, create and remove JWT token
+##Using Spring Boot, MySQL, Docker
 
 - --
 This guide will let you how to use build and run the application using Dockerfile
@@ -25,9 +20,9 @@ This guide will let you how to use build and run the application using Dockerfil
 
 ###2. create mysql container
 ```
-% docker pull mongo
+% docker pull --platform linux/x86_64 mysql
 % docker image ls
-% docker run --network backend-network --name mongo-container -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=mzMongo123 -e MONGO_INITDB_DATABASE=admin-mongodb -d mongo:latest
+% docker run --network backend-network --name mysql-container -e MYSQL_ROOT_PASSWORD=mzMysql123 -e MYSQL_DATABASE=mz_db_user --platform linux/x86_64 -d mysql:latest
 % docker container ls
 ```
 
@@ -38,7 +33,7 @@ Access to container and login to mysql with user root
 # mysql -uroot -p
 ```
 
-###3. create admin-service container
+###3. create auth-service container
 ```
 % gradle clean build
 ```
@@ -46,25 +41,8 @@ _it should build source code before build docker image_
 ```
 % docker build -t admin-service .
 % docker image ls
-% docker run --network backend-network --name admin-service-container -p 8081:8081 -d admin-service
+% docker run --network backend-network --name auth-service-container -p 8080:8080 -d auth-service
 % docker container ls
-```
-
-###4. Test Admin service
-Create a new employee
-```
-curl --location --request POST 'localhost:8081/employees' \
---header 'Content-Type: application/json' \
---data-raw '{
-    "firstName": "william",
-    "lastName": "huan le",
-    "title": "staff",
-    "departmentId": 1
-}'
-```
-Get all employees
-```
-curl --location --request GET 'localhost:8081/employees'
 ```
 
 ##Other notes:
@@ -91,15 +69,15 @@ ref: https://www.freecodecamp.org/news/how-to-get-a-docker-container-ip-address-
 % docker tag image username/repository:tag
 ```
 ```
-% docker tag admin-service williamhuanle/admin-service:0.0.1-SNAPSHOT
+% docker tag auth-service williamhuanle/auth-service:0.0.1-SNAPSHOT
 ```
 - Push the image to docker hub
 ```
-% docker push williamhuanle/admin-service:0.0.1-SNAPSHOT 
+% docker push williamhuanle/auth-service:0.0.1-SNAPSHOT 
 ```
 
 - Pulling the image from docker hub and running it
 
 ```
-docker run --network backend-network --name admin-service-container -p 8081:8081 williamhuanle/admin-service:0.0.1-SNAPSHOT
+docker run --network backend-network --name auth-service-container -p 8080:8080 williamhuanle/auth-service:0.0.1-SNAPSHOT
 ```

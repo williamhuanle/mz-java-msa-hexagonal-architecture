@@ -1,7 +1,7 @@
 spring:
   #database config
   datasource:
-    url: jdbc:mysql://localhost:3306/mz_db_user?useSSL=false
+    url: jdbc:mysql://localhost:3306/mz_db_user?allowPublicKeyRetrieval=true&useSSL=false
     username: root
     password: #your password
   #spring jpa config
