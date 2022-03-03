@@ -5,7 +5,7 @@ Define and run multi-container applications on a single host
 ## How to run
 
 ```
-    # move to root of dev-ops director
+    # move to root of dev-ops directory
     ..\dev-ops> docker-compose --env-file ./config/.env.dev up 
 ```
 
