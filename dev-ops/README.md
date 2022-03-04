@@ -1,9 +1,9 @@
-#DevOps docker compose
+# DevOps docker compose
 
 Define and run multi-container applications on a single host
 - --
 ## How to run
-
+Docker should be installed in your machine
 ##### 1. MOVE to the root of dev-ops directory
 ##### 2. COPY file config .env to config directory
 ##### 3. RUN the command line below
