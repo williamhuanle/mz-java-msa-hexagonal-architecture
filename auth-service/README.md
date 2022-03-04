@@ -1,7 +1,5 @@
-# Auth Service
-Which include the functions sign-up, sign-in, create and remove JWT token
-## Using Spring Boot, MySQL, Docker
-
+# Using Spring Boot, MySQL, Docker
+This sample include the functions sign-up, sign-in, create and remove JWT token
 - --
 This guide will let you how to use build and run the application using Dockerfile
 
