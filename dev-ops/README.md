@@ -27,7 +27,9 @@ Define and run multi-container applications on a single host
 ```
 
 Read more at 
-`admin-service/README.md`
-`auth-service/README.md`
-`web-admin/README.md`
+`admin-service/README.md` https://github.com/williamhuanle/mz-java-msa-hexagonal-architecture/tree/main/admin-service
+
+`auth-service/README.md` https://github.com/williamhuanle/mz-java-msa-hexagonal-architecture/tree/main/auth-service
+
+`web-admin/README.md` https://github.com/williamhuanle/web-admin 
 
